@@ -1,9 +1,14 @@
 import cron from "cron";
 import https from "https";
+import dotenv from "dotenv";
 
-const job = new cron.CronJob("*/14 * * * *", function () {
+dotenv.config();
+
+
+const job = new cron.CronJob("*/1 * * * *", function () {
   https
     .get(process.env.API_URL, (res) => {
+      console.log(process.env.API_URL)
       if (res.statusCode === 200) console.log("GET request sent successfully");
       else console.log("GET request failed", res.statusCode);
     })
