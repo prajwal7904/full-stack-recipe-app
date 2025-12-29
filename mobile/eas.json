@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 16.28.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+       "env": {
+        "BACKEND_API_URL": "https://food-recipe-app-1-rkie.onrender.com",
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "your_clerk_key_here"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

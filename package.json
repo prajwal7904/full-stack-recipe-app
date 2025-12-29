@@ -1,15 +1,14 @@
 {
-<<<<<<< HEAD
-=======
   "name": "backend",
   "version": "1.0.0",
   "main": "src/server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": " nodemon src/server.js"
+    "build": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
-  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -22,8 +21,8 @@
     "express": "^5.1.0",
     "nodemon": "^3.1.10"
   },
->>>>>>> ec685a795db6d3f685c72883aa999b7d6cafd33a
   "devDependencies": {
-    "drizzle-kit": "^0.31.4"
+    "drizzle-kit": "^0.31.4",
+    "@react-native-community/cli": "latest"
   }
 }
